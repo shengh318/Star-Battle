@@ -1,0 +1,16 @@
+Manual Testing Guideline for Star Battle:
+(This page should be integrated with the mocha test cases later)
+
+1. Covers servers:
+    Visit localhost:8789/echo => Assert they are running
+
+2. Covers drawing and /getpuzzle api:
+    Request for an empty puzzle at localhost:8789/getpuzzle => assert that the drawing renders correctly
+
+3. Covers eventListener: 
+    click on the cells multiple times => assert that the stars are toggling properly
+
+4. Covers Puzzle ADT isComplete():
+    Reach a winning position in the board => assert that a notification is generated properly 
+   
+(We may need to create a small puzzle for the ease of manual testing)
